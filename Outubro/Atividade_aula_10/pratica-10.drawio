@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="pratica-10-inicio" id="pratica-10-inicio">
+    <mxGraphModel dx="1693" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="860" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="planilha" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="pedido" vertex="1">
+          <mxGeometry height="274" width="330" x="-20" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.pedido" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;u&gt;PK codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="330" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.unidade" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK unidade_id" vertex="1">
+          <mxGeometry height="30" width="330" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.telefone_cliente" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK cliente_id" vertex="1">
+          <mxGeometry height="30" width="330" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-43" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK produtos_id" vertex="1">
+          <mxGeometry height="30" width="330" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.entregador" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="entregador" vertex="1">
+          <mxGeometry height="30" width="330" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.data_hora" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="data_hora NOT NULL" vertex="1">
+          <mxGeometry height="30" width="330" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-41" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="qtd NOT NULL" vertex="1">
+          <mxGeometry height="30" width="330" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="planilha.total" parent="planilha" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="total" vertex="1">
+          <mxGeometry height="30" width="330" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-2" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Unidade" vertex="1">
+          <mxGeometry height="124" width="330" x="400" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-31" parent="u8ymD5ZdfEUM-ClnZ3u1-2" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;u&gt;PK codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="330" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-5" parent="u8ymD5ZdfEUM-ClnZ3u1-2" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="local NOT NULL" vertex="1">
+          <mxGeometry height="30" width="330" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-6" parent="u8ymD5ZdfEUM-ClnZ3u1-2" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="endereco_unidade NOT NULL" vertex="1">
+          <mxGeometry height="30" width="330" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-34" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Cliente" vertex="1">
+          <mxGeometry height="94" width="330" x="400" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-35" parent="u8ymD5ZdfEUM-ClnZ3u1-34" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;u&gt;PK codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="330" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-37" parent="u8ymD5ZdfEUM-ClnZ3u1-34" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="telefone NOT NULL UNIQUE" vertex="1">
+          <mxGeometry height="30" width="330" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-38" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="produto" vertex="1">
+          <mxGeometry height="124" width="330" x="400" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-39" parent="u8ymD5ZdfEUM-ClnZ3u1-38" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;u&gt;PK codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="330" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-40" parent="u8ymD5ZdfEUM-ClnZ3u1-38" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="nome NOT NULL UNIQUE" vertex="1">
+          <mxGeometry height="30" width="330" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-42" parent="u8ymD5ZdfEUM-ClnZ3u1-38" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="preco NOT NULL" vertex="1">
+          <mxGeometry height="30" width="330" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-44" edge="1" parent="1" source="u8ymD5ZdfEUM-ClnZ3u1-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.533;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="u8ymD5ZdfEUM-ClnZ3u1-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-45" edge="1" parent="1" source="u8ymD5ZdfEUM-ClnZ3u1-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="planilha.telefone_cliente">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u8ymD5ZdfEUM-ClnZ3u1-47" edge="1" parent="1" source="u8ymD5ZdfEUM-ClnZ3u1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="planilha.unidade">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
